@@ -5,10 +5,10 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 export default function Home() {
     return (
-        <View>
+        <ScrollView>
             <Home_header />
             <Categories />
-            <ScrollView vertical showsVerticalScrollIndicator={false}>
+            <View vertical showsVerticalScrollIndicator={false}>
                 <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
                     <DisplayBooks />
                     <DisplayBooks />
@@ -34,8 +34,8 @@ export default function Home() {
                     <DisplayBooks />
                     <DisplayBooks />
                 </View>
-            </ScrollView >
-        </View>
+            </View >
+        </ScrollView>
     )
 }
 
@@ -46,10 +46,10 @@ const DisplayBooks = () => (
 )
 
 const Home_header = () => (
-    <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 30, paddingBottom: 10, paddingHorizontal: 15 }}>
+    <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 5, paddingBottom: 10, paddingHorizontal: 15 }}>
         <Text style={{ fontSize: 21, marginBottom: 5 }}>CAMPUSLIB</Text>
         <TextInput
-            style={{ height: 40, borderColor: '#eee', borderWidth: 1, borderRadius: 100, paddingHorizontal: 15, width: '100%' }}
+            style={{ height: 40, borderColor: '#eee', backgroundColor: '#eee', borderWidth: 1, borderRadius: 100, paddingHorizontal: 15, width: '100%' }}
             placeholder="Search"
         />
     </View>
