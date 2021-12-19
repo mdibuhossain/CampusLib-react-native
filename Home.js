@@ -8,10 +8,42 @@ export default function Home() {
         <View>
             <Home_header />
             <Categories />
+            <ScrollView vertical showsVerticalScrollIndicator={false}>
+                <View style={{ flexDirection: 'row', flexWrap: 'wrap' }}>
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                    <DisplayBooks />
+                </View>
+            </ScrollView >
         </View>
     )
 }
 
+const DisplayBooks = () => (
+    <View style={{ width: 110, height: 180, borderRadius: 8, backgroundColor: '#fff', marginHorizontal: 5, marginVertical: 5 }}>
+
+    </View>
+)
 
 const Home_header = () => (
     <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 30, paddingBottom: 10, paddingHorizontal: 15 }}>
