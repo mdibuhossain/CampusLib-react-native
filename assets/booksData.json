@@ -1,0 +1,197 @@
+[
+    {
+        "book_name": "ANSI C",
+        "author_name": "E. BALAGURUSAMY",
+        "download_link": "https://drive.google.com/file/d/1Yqz4SRtJGZpHvZgwKQGssf1-JEJehJiq/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/81W8e5V1jXL.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "FUNDAMENTALS OF COMPUTERS",
+        "author_name": "E. BALAGURUSAMY",
+        "download_link": "https://drive.google.com/file/d/1BmYGeOi5nGL6mQvUP90BtFdUkDzwt4pU/view?usp=sharing",
+        "book_cover": "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/0701/9780070141605.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "COMPUTER FUNDAMENTALS",
+        "author_name": "PK. SINHA",
+        "download_link": "https://drive.google.com/file/d/1AEueixi4y1v7Dq-v-FC1mY49k7v1HZC0/view?usp=sharing",
+        "book_cover": "https://i2.wp.com/learnengineering.in/wp-content/uploads/2019/07/PDF-Computer-Fundamentals-By-P.-K.-Sinha-Free-Download.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "DISCRETE MATHEMATICS AND ITS APPLICATIONS 7E",
+        "author_name": "Kenneth Rosen",
+        "download_link": "https://drive.google.com/file/d/1KPyJN5j33PuqEy0jjdD-K70pWscPoyBk/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/514i9GlcwDL._SX402_BO1,204,203,200_.jpg",
+        "categories": [
+            "programming",
+            "cse",
+            "math"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "C++ The Complete Reference 4E",
+        "author_name": "Herbert Schildt",
+        "download_link": "https://drive.google.com/file/d/1yxprwXNYYEOhglpnP0jNafPCc0rGxyMa/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/51Uqe5PHbML._SX381_BO1,204,203,200_.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "Head First C",
+        "author_name": "David Griffiths, Dawn Griffiths",
+        "download_link": "https://drive.google.com/file/d/14z-UBZoD9c5lzJpOds1Ns5mT5fCRl2Ye/view?usp=sharing",
+        "book_cover": "https://kbimages1-a.akamaihd.net/a82f881b-346c-4051-b894-56734fc4fd90/1200/1200/False/head-first-c.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "Head First Object-Oriented Analysis and Design",
+        "author_name": "Brett D. McLaughlin, Gary Pollice, Dave West",
+        "download_link": "https://drive.google.com/file/d/1hf7xJ2diWqpYrUAMrs49EPQ8jpgnt9dR/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/51FNFnkTMKL._SX430_BO1,204,203,200_.jpg",
+        "categories": [
+            "programming",
+            "cse",
+            "oops"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "COMPUTER PROGRAMMING",
+        "author_name": "TAMIM SHAHARIAR SUBEEN",
+        "download_link": "https://drive.google.com/file/d/1fFi7VUyeY9zc1TeDqFcJBGngDbKFU8P4/view?usp=sharing",
+        "book_cover": "https://static-01.daraz.com.bd/p/3bd72cfd5dbd6d18da1b64899ca1961d.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "DAWN OF PROGRAMMING CONTEST MARCH 2015",
+        "author_name": "MD MAHBUBUL HASAN",
+        "download_link": "https://drive.google.com/file/d/1DXpv5hg966Z7eI_Z1hbgWzqVuT9OnORh/view?usp=sharing",
+        "book_cover": "https://imgv2-2-f.scribdassets.com/img/document/359633511/original/3b5a475ef7/1634581995?v=1",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "ডাটা স্ট্রাকচার এবং অ্যালগরিদম",
+        "author_name": "TAMIM SHAHARIAR SUBEEN",
+        "download_link": "https://drive.google.com/file/d/18UztO6ysZN_HkQIEtV4LNb01WCvQOtef/view?usp=sharing",
+        "book_cover": "https://ofuronto.com/wp-content/uploads/2021/01/193765-1.jpg",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "Competitive Programming (2011)",
+        "author_name": "Steven Halim",
+        "download_link": "https://drive.google.com/file/d/1LgyhmBRmQ2fRfDYwv31Xx7dVoKpMkMDj/view?usp=sharing",
+        "book_cover": "https://0.academia-photos.com/attachment_thumbnails/56569003/mini_magick20181219-22561-1ueygpp.png?1545280884",
+        "categories": [
+            "programming",
+            "cse"
+        ],
+        "department": [
+            "cse"
+        ]
+    },
+    {
+        "book_name": "FUNDAMENTALS OF ELECTRIC CIRCUITS 6E",
+        "author_name": "Alexander Sadiku",
+        "download_link": "https://drive.google.com/file/d/1r3tO6KxligMmB1bad14hsScRPgjXNPD-/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/41aL2bVlVRL._SX389_BO1,204,203,200_.jpg",
+        "categories": [
+            "electronics",
+            "eee"
+        ],
+        "department": [
+            "eee"
+        ]
+    },
+    {
+        "book_name": "ELECTRONIC DEVICES AND CIRCUITS THEORY 7E",
+        "author_name": "Robert Boylestad and Louis Nashelsky",
+        "download_link": "https://drive.google.com/file/d/1uU5yODrjBot0yyonUuCOfOJ-FRP9LtkV/view?usp=sharing",
+        "book_cover": "https://cs.cheggcdn.com/covers2/1070000/1077818_1263913878_Width288.jpg",
+        "categories": [
+            "electronics",
+            "eee"
+        ],
+        "department": [
+            "eee"
+        ]
+    },
+    {
+        "book_name": "CALCULUS 10E",
+        "author_name": "H. ANTON",
+        "download_link": "https://drive.google.com/file/d/1Z01niceeYUbqNJnWFlgSmtmM2OTkRxbg/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/41hu5FzKYoL.jpg",
+        "categories": [
+            "math"
+        ],
+        "department": [
+            "mat"
+        ]
+    },
+    {
+        "book_name": "Ordinary and Partial Differential Equations 15E",
+        "author_name": "Dr M. D. Raisinghania",
+        "download_link": "https://drive.google.com/file/d/1KqIVJJR9NbOzUfJ2gmrSkh9dy2BkN7ob/view?usp=sharing",
+        "book_cover": "https://images-na.ssl-images-amazon.com/images/I/51KuymFZNSL._SX353_BO1,204,203,200_.jpg",
+        "categories": [
+            "math"
+        ],
+        "department": [
+            "mat"
+        ]
+    }
+]
