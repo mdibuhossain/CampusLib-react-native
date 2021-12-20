@@ -13,6 +13,7 @@ export default function Navigation() {
     return (
         <Tab.Navigator
             screenOptions={({ route }) => ({
+                headerShown: false,
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
 
@@ -35,8 +36,8 @@ export default function Navigation() {
                 tabBarInactiveTintColor: 'gray',
             })}>
             <Tab.Screen name="Home" component={Home} />
-            <Tab.Screen name="Departments" component={Departments} />
+            {/* <Tab.Screen name="Departments" component={Departments} /> */}
             <Tab.Screen name="About" component={About} />
-        </Tab.Navigator>
+        </Tab.Navigator >
     )
 }

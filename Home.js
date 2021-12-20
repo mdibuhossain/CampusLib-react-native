@@ -8,7 +8,7 @@ export default function Home() {
     const [showBooks, setShowBooks] = useState([]);
 
     useEffect(() => {
-        fetch('http://10.0.0.105:5000/books')
+        fetch('https://campuslib.herokuapp.com/books')
             .then(res => res.json())
             .then(json => setBooks(json))
     }, [])
@@ -65,8 +65,8 @@ const Home_header = ({ books, setShowBooks }) => {
         setShowBooks(searchData);
     }
     return (
-        <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 5, paddingBottom: 10, paddingHorizontal: 15 }}>
-            <Text style={{ fontSize: 21, marginBottom: 5 }}>CAMPUSLIB</Text>
+        <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 30, paddingBottom: 10, paddingHorizontal: 15 }}>
+            <Text style={{ fontSize: 21, marginBottom: 5, fontWeight: 'bold' }}>CAMPUSLIB</Text>
             <TextInput
                 onChangeText={(txt) => handleSearch(txt)}
                 style={{ height: 40, borderColor: '#eee', backgroundColor: '#eee', borderWidth: 1, borderRadius: 100, paddingHorizontal: 15, width: '100%' }}
@@ -76,39 +76,39 @@ const Home_header = ({ books, setShowBooks }) => {
     )
 }
 
-const Categories = () => (
-    <View style={{ flexDirection: 'row', backgroundColor: '#fff', marginVertical: 5, height: 60, alignItems: 'center', paddingHorizontal: 15 }}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-            <View style={{ marginRight: 5 }} >
-                <Button title='CSE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='EEE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='MAT' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-            <View style={{ marginRight: 5 }} >
-                <Button title='BGE' />
-            </View>
-        </ScrollView>
-    </View>
-)
+// const Categories = () => (
+//     <View style={{ flexDirection: 'row', backgroundColor: '#fff', marginVertical: 5, height: 60, alignItems: 'center', paddingHorizontal: 15 }}>
+//         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='CSE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='EEE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='MAT' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//             <View style={{ marginRight: 5 }} >
+//                 <Button title='BGE' />
+//             </View>
+//         </ScrollView>
+//     </View>
+// )
