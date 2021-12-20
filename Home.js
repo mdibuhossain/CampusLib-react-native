@@ -5,6 +5,7 @@ import { Button } from 'react-native-elements'
 
 export default function Home() {
     const [books, setBooks] = useState([]);
+    const [showBooks, setShowBooks] = useState([]);
 
     useEffect(() => {
         fetch('http://10.0.0.105:5000/books')
@@ -12,15 +13,18 @@ export default function Home() {
             .then(json => setBooks(json))
     }, [])
 
+    useEffect(() => {
+        setShowBooks(books);
+    }, [books])
+
     return (
         <ScrollView>
-            {/* <Text>{books.length}</Text> */}
-            <Home_header />
+            <Home_header books={books} setShowBooks={setShowBooks} />
             <Categories />
             <View vertical showsVerticalScrollIndicator={false}>
                 <View style={{ paddingHorizontal: 10 }}>
                     {
-                        books.map((book) => <DisplayBooks key={book._id} book={book} />)
+                        showBooks.map((book) => <DisplayBooks key={book._id} book={book} />)
                     }
                 </View>
             </View >
@@ -54,15 +58,23 @@ const DisplayBooks = (props) => {
     )
 }
 
-const Home_header = () => (
-    <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 5, paddingBottom: 10, paddingHorizontal: 15 }}>
-        <Text style={{ fontSize: 21, marginBottom: 5 }}>CAMPUSLIB</Text>
-        <TextInput
-            style={{ height: 40, borderColor: '#eee', backgroundColor: '#eee', borderWidth: 1, borderRadius: 100, paddingHorizontal: 15, width: '100%' }}
-            placeholder="Search"
-        />
-    </View>
-)
+const Home_header = ({ books, setShowBooks }) => {
+    const [text, setText] = useState('');
+    const handleSearch = (txt) => {
+        const searchData = books.filter(book => (book?.book_name?.toLowerCase()?.includes(txt.toLowerCase()) || book?.author_name?.toLowerCase()?.includes(txt.toLowerCase())));
+        setShowBooks(searchData);
+    }
+    return (
+        <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 5, paddingBottom: 10, paddingHorizontal: 15 }}>
+            <Text style={{ fontSize: 21, marginBottom: 5 }}>CAMPUSLIB</Text>
+            <TextInput
+                onChangeText={(txt) => handleSearch(txt)}
+                style={{ height: 40, borderColor: '#eee', backgroundColor: '#eee', borderWidth: 1, borderRadius: 100, paddingHorizontal: 15, width: '100%' }}
+                placeholder="Search"
+            />
+        </View>
+    )
+}
 
 const Categories = () => (
     <View style={{ flexDirection: 'row', backgroundColor: '#fff', marginVertical: 5, height: 60, alignItems: 'center', paddingHorizontal: 15 }}>
