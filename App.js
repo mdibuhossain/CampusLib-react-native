@@ -7,9 +7,9 @@ import Navigation from './Navigation';
 export default function App() {
   return (
     // <SafeAreaProvider style={{ backgroundColor: '#eee' }}>
-      <NavigationContainer>
-        <Navigation />
-      </NavigationContainer>
+    <NavigationContainer>
+      <Navigation />
+    </NavigationContainer>
     // </SafeAreaProvider>
   );
 }
