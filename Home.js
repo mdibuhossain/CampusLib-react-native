@@ -1,5 +1,6 @@
+import { Link } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react'
-import { View, Text, TextInput, ScrollView, Image, TouchableOpacity } from 'react-native'
+import { View, Text, TextInput, ScrollView, Image, TouchableOpacity, Linking } from 'react-native'
 import { Button } from 'react-native-elements'
 
 export default function Home() {
@@ -29,26 +30,28 @@ export default function Home() {
 
 const DisplayBooks = (props) => {
     const { book } = props;
-    return <TouchableOpacity activeOpacity={0.6}>
-        <View style={{ flexDirection: 'row', width: "100%", height: 60, borderRadius: 8, backgroundColor: '#fff', marginVertical: 5, padding: 8, alignItems: 'flex-start' }}>
-            <Image
-                style={{ borderRadius: 5, marginRight: 10 }}
-                source={{
-                    width: 40,
-                    height: '100%',
-                    uri: `${book?.book_cover}`
-                }}
-            />
-            <View style={{ width: '85%' }}>
-                <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: 'bold', color: '#4d4d4d' }}>
-                    {book?.book_name}
-                </Text>
-                <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: '100', color: '#969696' }}>
-                    {book?.author_name}
-                </Text>
+    return (
+        <TouchableOpacity onPress={() => Linking.openURL(`${book?.download_link}`)} activeOpacity={0.6}>
+            <View style={{ flexDirection: 'row', width: "100%", height: 60, borderRadius: 8, backgroundColor: '#fff', marginVertical: 5, padding: 8, alignItems: 'flex-start' }}>
+                <Image
+                    style={{ borderRadius: 5, marginRight: 10 }}
+                    source={{
+                        width: 40,
+                        height: '100%',
+                        uri: `${book?.book_cover}`
+                    }}
+                />
+                <View style={{ width: '85%' }}>
+                    <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: 'bold', color: '#4d4d4d' }}>
+                        {book?.book_name}
+                    </Text>
+                    <Text numberOfLines={1} ellipsizeMode='tail' style={{ fontWeight: '100', color: '#969696' }}>
+                        {book?.author_name}
+                    </Text>
+                </View>
             </View>
-        </View>
-    </TouchableOpacity>
+        </TouchableOpacity>
+    )
 }
 
 const Home_header = () => (
