@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <ScrollView>
             <Home_header books={books} setShowBooks={setShowBooks} />
-            <Categories />
+            {/* <Categories /> */}
             <View vertical showsVerticalScrollIndicator={false}>
                 <View style={{ paddingHorizontal: 10 }}>
                     {
@@ -61,7 +61,7 @@ const DisplayBooks = (props) => {
 const Home_header = ({ books, setShowBooks }) => {
     const [text, setText] = useState('');
     const handleSearch = (txt) => {
-        const searchData = books.filter(book => (book?.book_name?.toLowerCase()?.includes(txt.toLowerCase()) || book?.author_name?.toLowerCase()?.includes(txt.toLowerCase())));
+        const searchData = books.filter(book => (book?.book_name?.toLowerCase()?.includes(txt.toLowerCase()) || book?.author_name?.toLowerCase()?.includes(txt.toLowerCase()) || book?.categories?.includes(txt.toLowerCase()) || book?.department?.includes(txt.toLowerCase())));
         setShowBooks(searchData);
     }
     return (
