@@ -72,7 +72,7 @@ const Home_header = ({ books, setShowBooks }) => {
         setShowBooks(searchData);
     }
     return (
-        <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 30, paddingBottom: 10, paddingHorizontal: 15 }}>
+        <View style={{ alignItems: 'center', backgroundColor: '#fff', paddingTop: 30, paddingBottom: 10, paddingHorizontal: 15, elevation: 10 }}>
             <Text style={{ fontSize: 21, marginBottom: 5, fontWeight: 'bold' }}>CAMPUSLIB</Text>
             <TextInput
                 onChangeText={(txt) => handleSearch(txt)}
