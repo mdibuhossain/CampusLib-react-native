@@ -1,16 +1,22 @@
 import { Link } from '@react-navigation/native';
 import React, { useEffect, useState } from 'react'
 import { View, Text, TextInput, ScrollView, Image, TouchableOpacity, Linking } from 'react-native'
+import ContentLoader, { FacebookLoader } from 'react-native-easy-content-loader';
 import { Button } from 'react-native-elements'
 
 export default function Home() {
     const [books, setBooks] = useState([]);
     const [showBooks, setShowBooks] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setIsLoading(true);
         fetch('https://campuslib.herokuapp.com/books')
             .then(res => res.json())
-            .then(json => setBooks(json))
+            .then(json => {
+                setBooks(json);
+                setIsLoading(false);
+            })
     }, [])
 
     useEffect(() => {
@@ -18,17 +24,18 @@ export default function Home() {
     }, [books])
 
     return (
-        <ScrollView>
+        <>
             <Home_header books={books} setShowBooks={setShowBooks} />
             {/* <Categories /> */}
-            <View vertical showsVerticalScrollIndicator={false}>
+            <ScrollView vertical showsVerticalScrollIndicator={false}>
                 <View style={{ paddingHorizontal: 10 }}>
                     {
-                        showBooks.map((book) => <DisplayBooks key={book._id} book={book} />)
+                        isLoading ? <ContentLoader active listSize={5} />
+                            : (showBooks.length ? showBooks.map((book) => <DisplayBooks key={book._id} book={book} />) : <Text>No match found</Text>)
                     }
                 </View>
-            </View >
-        </ScrollView>
+            </ScrollView >
+        </>
     )
 }
 
